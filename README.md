@@ -1,2 +1,2 @@
-# pinpict-chroe
+# pinpict-chrome
 Pinpict chrome extension
