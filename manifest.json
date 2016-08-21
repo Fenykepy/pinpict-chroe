@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Pinpict",
+  "description": "This extension allows to add pictures from current page to PinPict",
+  "version": "0.1",
+
+  "browser_action": {
+    "default_icon": "pinpict-favicon.png"
+  },
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
